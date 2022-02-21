@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://vmwaresaas.jfrog.io/artifactory/Workspace-ONE-Android-SDK/'
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "AirwatchBug"
+include ':app'
